@@ -1,0 +1,61 @@
+.moviecard{
+    width: 85%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(200, 200, 200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px 20px;
+
+}
+
+.moviecard__image{
+    
+    width: 20%;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.moviecard__right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content: center;
+}
+
+.moviecard__right > .moviecard__title{
+    font-size: 3.5em;
+}
+
+@media screen and (max-width: 780px){
+    .moviecard{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .moviecard__image{
+        width:100%;
+        height: 400px;
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+        margin-bottom: -200px;
+        margin-left: 20px;
+    }
+
+    .moviecard__title{
+        margin-top: 20px;
+        margin-bottom: 2px;
+    }
+
+    .moviecard__right{
+        background-color: rgb(255, 255, 255);
+        margin-left: 0;
+        border-radius: 20px;
+        padding: 20px;
+
+    }
+}
