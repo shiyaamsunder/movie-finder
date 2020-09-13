@@ -35,9 +35,9 @@ function Search() {
             </form>
 
             <div className="search__results">
-                {movies.filter(movie => movie.poster_path).map(movie => (
+                {movies ? movies.filter(movie => movie.poster_path).map(movie => (
                     <MovieCard title={movie.title} des={movie.overview} date={movie.release_date} image={movie.poster_path} />
-                ))}
+                )) : <h3>No movies found</h3>}
             </div>
         </div>
 
